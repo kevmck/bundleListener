@@ -8,8 +8,8 @@ require_once('rabbitMQLib.inc');
 function deploy($request)
 {
   //echo($request["message"]);
-  echo("fdgg");
-  shell_exec("python3 install.py ". "dfdfdfggfg");
+  //echo("fdgg");
+  shell_exec("python3 install.py ". $request["version"]);
 }
 
 function requestProcessor($request)
