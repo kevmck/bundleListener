@@ -13,6 +13,7 @@ conf.read("/home/vm164/temp/bundle.ini")
 temp = conf.get("settings", "dst")
 dest = conf.get("settings", "instDst")
 
+os.system("rm -rf /home/vm164/git/rabbitmqphp_example")
 os.system("rm -rf /home/vm164/temp/rabbitmqphp_example/.git")
 os.system("cp -R " + temp + "rabbitmqphp_example " + dest)
 #print(("cp -R " + temp + "rabbitmqphp_example " + dest))
